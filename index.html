@@ -103,7 +103,7 @@
       position: fixed;
       z-index: 999;
       box-shadow: 3px 3px 0 #ddd;
-      margin-bottom: 80px;
+     
     }
     .btn-no:hover { background: #fff3c0; }
 
@@ -262,9 +262,9 @@
     function initNo() {
       const wrap = document.querySelector('.botones-wrap');
       const r = wrap.getBoundingClientRect();
-      // posición inicial: donde estaría visualmente el botón no
-      btnNo.style.left = (r.left + r.width/2 + 10) + 'px';
-      btnNo.style.top  = r.top + 'px';
+      
+      btnNo.style.left = (r.left + r.width/2 + 80) + 'px';
+      btnNo.style.top  = r.top  + 'px';
     }
     window.addEventListener('load', initNo);
     window.addEventListener('resize', initNo);
